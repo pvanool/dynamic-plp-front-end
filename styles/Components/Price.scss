@@ -1,0 +1,19 @@
+.widget-price {
+ display: inline;
+
+ font-size: 16px;
+  vertical-align: middle;
+ & sup {
+   vertical-align: top;
+ }
+
+ .display-promo {
+   margin-left: 10px;
+   color: $black;
+ }
+
+ .display-promo, .display-price {
+  font-weight: bold;
+  color: $red;
+ }
+}

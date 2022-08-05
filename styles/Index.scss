@@ -1,0 +1,19 @@
+@import "./Lib/_responsive.scss";
+@import "./Lib/_colors.scss";
+@import "./Lib/_typography.scss";
+
+@import "./Components/ProductCards.scss";
+@import "./Components/Price.scss";
+
+html,
+body {
+  font-size: 14px;
+  //  overflow-x: hidden;
+}
+
+.layout__container {
+  min-height: calc(100vh - 160px);
+  .MuiBox-root {
+    margin: 0;
+  }
+}

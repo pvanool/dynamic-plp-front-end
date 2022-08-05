@@ -1,0 +1,18 @@
+{
+    "include": [
+      {
+        "fieldName": "ec_price",
+        "operator": "isLessThanOrEqualTo",
+        "value": {
+            "type": "decimal",
+            "value": 100
+        }
+      }
+    ],
+    "exclude": [
+    ],
+    "name": "sales",
+    "urls": [
+      "http://mystore.com/sales"
+    ]
+}

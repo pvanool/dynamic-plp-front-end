@@ -1,0 +1,74 @@
+.card-product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: none;
+  animation: loadIn 1s;
+  padding: 10px;
+
+  .card__body {
+    padding: 15px 0;
+    height: 125px;
+  }
+
+  .card__price, .CoveoResultLink {
+    margin-bottom: 10px;
+  }
+  
+  .CoveoResultLink{
+    cursor: pointer;
+    color: $black;
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .card__price {
+    float: right;
+  }
+
+  .card__media{
+    cursor: pointer;
+    height: 0;
+    background-size: contain;
+    padding-top: 56.25%;
+  }
+  
+  .card__expertratings {
+    float: left;
+    cursor: default;
+    line-height: 1;
+    color: $grey-dark;
+    &:empty{ 
+      display: none 
+    }
+  }
+}
+
+.widget-rating {
+  
+  display: inline-block;
+  color: silver;
+  font-size: 16px;
+  vertical-align: middle;
+  position: relative;
+  & sup {
+    vertical-align: top;
+  }
+  
+  .rating-fill {
+    color: $burgundy;
+    position: absolute;
+    overflow: hidden;
+  }
+}
+
+@keyframes loadIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
